@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Sorter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 200px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>YouTube Sort Options</h3>
+    <label for="sort-type">Sort by:</label>
+    <select id="sort-type">
+      <option value="viewCount">View Count</option>
+      <option value="likeCount">Likes</option>
+      <option value="dislikeCount">Dislikes</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <label for="order">Order:</label>
+    <select id="order">
+      <option value="desc">Descending</option>
+      <option value="asc">Ascending</option>
+    </select>
+
+    <button id="applySort">Apply Sort</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
